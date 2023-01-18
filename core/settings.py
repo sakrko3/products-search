@@ -15,6 +15,7 @@ from pathlib import Path
 from decouple import Csv, config
 from dj_database_url import parse as db_url
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -32,8 +33,6 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost", cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
-from decouple import Csv, config
-from dj_database_url import parse as db_url
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
